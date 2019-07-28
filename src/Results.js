@@ -3,7 +3,6 @@ import Pet from './Pet';
 
 const Results = (props) => {
     const { pets = [] } = props;
-    debugger;
     console.log('animals', pets);
     return (
         <div className='search'>
@@ -14,6 +13,7 @@ const Results = (props) => {
                             breed={eachPet.breeds.primary}
                             key={eachPet.id}
                             media={eachPet.photos}
+                            id={eachPet.id}
                             location={`${eachPet.contact.address.city}, ${eachPet.contact.address.state}, ${eachPet.id}`}
                             />
             }) }

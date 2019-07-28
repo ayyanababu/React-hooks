@@ -6,6 +6,7 @@ const Pet = (props) => {
   if (media.length) {
     hero = media[0].small;
   }
+  debugger;
 
   return (
     <a href={`/details/${id}`} className="pet">
